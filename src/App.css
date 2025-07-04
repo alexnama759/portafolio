@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  z-index: 10;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav li {
+  cursor: pointer;
+  color: #555;
+}
+
+.nav li.active {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.section {
+  padding: 100px 20px;
+  min-height: 100vh;
+}
+
+.skills, .projects {
+  display: grid;
+  gap: 1rem;
+}
+
+.skills > div, .project {
+  background: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.tags span {
+  display: inline-block;
+  background: #ddd;
+  padding: 0.2rem 0.5rem;
+  margin: 0.2rem;
+  border-radius: 4px;
+}
+
+.contact a {
+  display: block;
+  margin: 0.5rem 0;
+  color: #007bff;
+  text-decoration: none;
+}
